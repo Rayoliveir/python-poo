@@ -40,7 +40,7 @@ class Conta:
         self._saldo += valor
         return self._saldo
 
-    def __verificar_sacar(self, valor):
+    def __verificar_depositar(self, valor):
         if valor< 0:
             raise ValorNegativoError("Não é possivel depositar valor negativo.")
 
